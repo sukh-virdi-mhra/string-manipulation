@@ -1,1 +1,3 @@
-console.log("Hello, World!");
+var input = document.querySelectorAll('textarea')[0],
+
+
