@@ -2,34 +2,36 @@ var input = document.querySelectorAll('textarea')[0]
   characterCount = document.querySelector('#characterCount')
   wordCount = document.querySelector('#wordCount')
   sentenceCount = document.querySelector('#sentenceCount')  
-  averageWords = document.querySelector('#averageWords')
+  averageWordLength = document.querySelector('#averageWordLength')
   
 input.addEventListener('keyup', function() {
   
-  console.clear();
+  console.clear()
   
-
   var characters = input.value.length //- input.value.split(" ").length + 1;
   characterCount.innerHTML = characters
   
-  var words = input.value.match(/\b[-?(\w+)?]+\b/gi);
+  var words = input.value.match(/\b[-?(\w+)?]+\b/gi)
 
   if (words) {
-    wordCount.innerHTML = words.length;
+    wordCount.innerHTML = words.length
   } else {
-    wordCount.innerHTML = 0;
+    wordCount.innerHTML = 0
   }
 
   if (words) {
-    var sentences = input.value.split(/[.|!|?]+/g);
-    var averageWordCharacters = words.toString().length - (words.length - 1);
-    var averageWordsjs = (averageWordCharacters / words.length)
-    console.log(words.toString())
-    sentenceCount.innerHTML = sentences.length - 1;
-    averageWords.innerHTML = averageWordsjs
+    var averageWordCharacters = words.toString().length - (words.length - 1)
+    var averageWordLengthjs = (averageWordCharacters / words.length)
+    averageWordLength.innerHTML = averageWordLengthjs.toFixed(2)
   } else {
-    sentenceCount.innerHTML = 0;
-    averageWords.innerHTML = 0;
+    averageWordLength.innerHTML = 0
+  }
+
+  if (words) {
+    var sentences = input.value.split(/[.|!|?]+/g)
+    sentenceCount.innerHTML = sentences.length - 1
+  } else {
+    sentenceCount.innerHTML = 0
   }
 
 });
