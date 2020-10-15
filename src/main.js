@@ -1,3 +1,8 @@
+//User stories:
+//Shows the number of characters - Done
+//Shows the number of words - Done
+//Shows the average word length - Done
+//Shows the top keywords - Done
 let input = document.querySelectorAll('textarea')[0]
   characterCount = document.querySelector('#characterCount')
   wordCount = document.querySelector('#wordCount')
