@@ -1,0 +1,26 @@
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	text-align: center;
+	margin: 1% 0 3%;
+}
+
+textarea {
+	width: 100%;
+	height: 250px;
+	padding: 10px;
+	border: 1px solid #d9d9d9;
+	outline: none;
+	font-size: 1rem;
+	resize: none;
+	line-height: 1.5rem;
+}
+
+.output {
+	text-align: center;
+	font-size: 25px;
+}
+
+.keywords {
+	list-style: none
+}
