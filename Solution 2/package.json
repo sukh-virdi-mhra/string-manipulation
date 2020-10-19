@@ -1,0 +1,12 @@
+{
+  "name": "string_manipulation",
+  "version": "1.0.0",
+  "description": "This project is to showcase a range of ways you analyse a string that has been submitted by a user's input.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": ""
+  },
+  "author": "sukhvirdi7",
+  "license": "n/a"
+}
