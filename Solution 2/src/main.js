@@ -1,5 +1,5 @@
 const wordCount = require("./services/topKeywords/index.js")
-const CharacterCount = require( "./services/characterCount/index.js")
+const characterCount = require( "./services/characterCount/index.js")
 const averageWordLength = require("./services/averageWordLength/index.js")
 const topKeywords = require("./services/topKeywords/index.js")
 
@@ -14,7 +14,7 @@ let rl = readline.createInterface({
 
 rl.question("Enter your text here... ", (answer) => {
     console.log("The Word Count is:", wordCount(answer))
-    console.log("The Character Count is:", CharacterCount(answer)), 
+    console.log("The Character Count is:", characterCount(answer)), 
     console.log("The Average Word Length is:", averageWordLength(answer)), 
     console.log("The Top Keywords are:", topKeywords(answer))
     rl.close()
