@@ -5,8 +5,11 @@
   "main": "src/main.js",
   "scripts": {
     "start": "node src/main.js",
-    "test": ""
+    "test": "jest"
   },
   "author": "sukhvirdi7",
-  "license": "n/a"
+  "license": "n/a",
+  "dependencies": {
+    "jest": "^26.6.0"
+  }
 }

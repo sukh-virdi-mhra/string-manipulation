@@ -1,7 +1,7 @@
-const wordCount = require("./services/topKeywords/index.js")
-const characterCount = require( "./services/characterCount/index.js")
-const averageWordLength = require("./services/averageWordLength/index.js")
-const topKeywords = require("./services/topKeywords/index.js")
+const wordCount = require("./services/topKeywords.js")
+const characterCount = require( "./services/characterCount.js")
+const averageWordLength = require("./services/averageWordLength.js")
+const topKeywords = require("./services/topKeywords.js")
 
 let readline = require('readline')
 
