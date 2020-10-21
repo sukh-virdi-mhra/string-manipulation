@@ -1,7 +1,7 @@
-const wordCount = require("./services/wordCount.js")
-const characterCount = require( "./services/characterCount.js")
-const averageWordLength = require("./services/averageWordLength.js")
-const topKeywords = require("./services/topKeywords.js")
+import wordCount from "./services/wordCount"
+import characterCount from "./services/characterCount"
+import averageWordLength from "./services/averageWordLength"
+import topKeywords from "./services/topKeywords"
 
 let readline = require('readline')
 
@@ -12,7 +12,7 @@ let rl = readline.createInterface({
   output: process.stdout
 })
 
-rl.question("Enter your text here... ", (answer) => {
+rl.question("Enter your text here... ", (answer: string) : void => {
 // console.log(topKeywords(answer))
 console.log(
   `Word Count: ${wordCount(answer)}

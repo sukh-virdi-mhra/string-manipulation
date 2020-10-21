@@ -1,4 +1,4 @@
-function topKeywords(str) {
+export default function topKeywords(str: string) : object {
   let words = str.replace(/[.]/g, '').split(/\s/);
   let freqMap = {}
   words.forEach(function(w) {
@@ -10,5 +10,3 @@ function topKeywords(str) {
 
   return freqMap
 }
-
-module.exports = topKeywords

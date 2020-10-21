@@ -4,12 +4,16 @@
   "description": "This project is to showcase a range of ways you analyse a string that has been submitted by a user's input.",
   "main": "src/main.js",
   "scripts": {
-    "start": "node src/main.js",
-    "test": "jest"
+    "start": "node out/main.js",
+    "test": "jest",
+    "build": "tsc"
   },
   "author": "sukhvirdi7",
   "license": "n/a",
   "dependencies": {
     "jest": "^26.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
   }
 }

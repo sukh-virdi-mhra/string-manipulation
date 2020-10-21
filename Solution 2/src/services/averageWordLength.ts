@@ -1,4 +1,4 @@
-function averageWordLength (str) {
+export default function averageWordLength (str: string) : string {
   var wordCount = str.split(" ").length;
   var wordArray = str.split(" ");
   var string = 0;
@@ -8,5 +8,3 @@ function averageWordLength (str) {
   var averageWordLength = string / wordCount;
   return averageWordLength.toFixed(2)
 }
-
-module.exports = averageWordLength
