@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 })
 
 app.post("/wordCounter", (req, res) => {
-    let wordCounter = main(req.body.str)
+    let wordCounter = main(req.body.words)
     res.send(wordCounter)
 })
 app.set("title", "Word Counter")
