@@ -1,9 +1,7 @@
-## Table of contents
-* [General info](#general-info)
-* [Setup](#setup)
+# String Manipulation
+Input any piece of text to see some interesting statistics such as the character count, word count, top keywords used and the average word length!
 
 ## General info
-This project is to showcase a range of ways you analyse a string that has been submitted by a user's input.
 My first solution is based around an event listener containing my logic, then outputted to the user within HTML div elements.
 	
 ## Setup
