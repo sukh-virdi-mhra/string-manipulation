@@ -1,0 +1,9 @@
+html 
+  head 
+    link(rel="stylesheet" type="text/css" href= "/styles/style.css")
+  body
+    h1
+      | Word Counter
+    form(action='/wordCounter', method='POST')
+      input(type="text", id="words", name="words", placeholder="Enter your text...")
+      input(type="submit", value="Submit")

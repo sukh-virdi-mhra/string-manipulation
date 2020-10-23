@@ -5,20 +5,20 @@ import topKeywords from "./services/topKeywords"
 
 let readline = require('readline')
 
-function main(){
+export default function main(str: string): string{
 
-let rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+// let rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
 
-rl.question("Enter your text here... ", (answer: string) : void => {
+// rl.question("Enter your text here... ", (answer: string) : void => {
 // console.log(topKeywords(answer))
-console.log(
-  `Word Count: ${wordCount(answer)}
-Character Count: ${characterCount(answer)}
-Average Word Length: ${averageWordLength(answer)}
-Top Keywords: ` + JSON.stringify(topKeywords(answer)))
-})}
+return(
+  `Word Count: ${wordCount(str)}
+Character Count: ${characterCount(str)}
+Average Word Length: ${averageWordLength(str)}
+Top Keywords: ` + JSON.stringify(topKeywords(str)))
+}
 
-main()
+// main()
